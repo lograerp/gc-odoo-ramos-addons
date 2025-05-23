@@ -6,9 +6,11 @@
     'author': 'Gauchocode',
     'license': 'GPL-3',
     'category': 'Warehouse',
-    'depends': ['base', 'stock'],
+    'depends': ['base', 'stock','tarif_restriction_by_user'],
     'data': [
-        'views/pricelist_view.xml'
+        'views/pricelist_view.xml',
+        'security/ir.model.access.csv',
+        'security/product_pricelist_report_rules.xml',
     ],
     'installable': True,
     'application': False,

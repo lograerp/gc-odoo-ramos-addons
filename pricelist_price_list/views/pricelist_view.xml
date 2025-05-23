@@ -1,31 +1,69 @@
 <odoo>
-<record id="view_pricelist_item_tree" model="ir.ui.view">
-  <field name="name">product.pricelist.item.tree</field>
-  <field name="model">product.pricelist.item</field>
-  <field name="arch" type="xml">
-    <tree string="Items de Listas de Precio">
-      <field name="product_tmpl_id"/>
-      <field name="product_id"/>
-      <field name="pricelist_id"/>
-      <field name="fixed_price"/>
-      <!-- otros campos útiles:
-           <field name="percent_price"/>
-           <field name="price_discount"/>
-           <field name="min_quantity"/>
-      -->
-    </tree>
-  </field>
-</record>
-<record id="action_pricelist_item_tree" model="ir.actions.act_window">
-  <field name="name">Items de Lista de Precio</field>
-  <field name="res_model">product.pricelist.item</field>
-  <field name="view_mode">tree,form</field>
-  <field name="view_id" ref="view_pricelist_item_tree"/>
-</record>
+    <record id="view_product_pricelist_report_tree" model="ir.ui.view">
+        <field name="name">product.pricelist.report.tree</field>
+        <field name="model">product.pricelist.report</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="product_id"/>
+                <field name="pricelist_id"/>
+                <field name="price"/>
+                <field name="last_generated" optional="hide"/>
+            </tree>
+        </field>
+    </record>
 
-<menuitem id="menu_pricelist_items"
-          name="Items de Lista de Precio"
+    <!-- Vista de búsqueda -->
+    <record id="view_product_pricelist_report_search" model="ir.ui.view">
+        <field name="name">product.pricelist.report.search</field>
+        <field name="model">product.pricelist.report</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Precios">
+                <field name="product_id"/>
+                <field name="pricelist_id" />
+                <field name="price"/>
+                <group expand="0" string="Agrupar por">
+                    <filter name="group_by_product" string="Producto" context="{'group_by': 'product_id'}"/>
+                    <filter name="group_by_pricelist" string="Tarifa" context="{'group_by': 'pricelist_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_product_pricelist_report_window" model="ir.actions.act_window">
+        <field name="name">Reporte de Precios por Tarifa</field>
+        <field name="res_model">product.pricelist.report</field>
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="view_product_pricelist_report_tree"/>
+        <field name="search_view_id" ref="view_product_pricelist_report_search"/>
+        <field name="target">current</field>
+    </record>
+
+    <!-- Acción para abrir la vista -->
+    <record id="action_open_or_generate_report" model="ir.actions.server">
+        <field name="name">Ver Reporte de Precios</field>
+        <field name="model_id" ref="model_product_pricelist_report"/>
+        <field name="state">code</field>
+        <field name="code">action = model.open_or_generate_report()</field>
+    </record>
+
+    <menuitem id="menu_open_or_generate_report"
+            name="Reporte de Precios por Tarifa"
+            parent="sale.product_menu_catalog"
+            action="action_open_or_generate_report"/>
+
+<record id="action_generate_report_data" model="ir.actions.server">
+    <field name="name">Generar Reporte de Precios</field>
+    <field name="model_id" ref="model_product_pricelist_report"/>
+    <field name="state">code</field>
+    <field name="code">
+        action = model.generate_data()
+    </field>
+</record>
+<!-- Menú para regenerar el reporte -->
+<menuitem id="menu_generate_report"
+          name="Regenerar Reporte de Precios"
           parent="sale.product_menu_catalog"
-          action="action_pricelist_item_tree"/>
+          action="action_generate_report_data"/>
+
 
 </odoo>

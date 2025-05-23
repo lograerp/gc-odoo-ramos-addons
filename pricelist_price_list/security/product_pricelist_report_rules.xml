@@ -1,0 +1,13 @@
+<odoo>
+<record id="rule_pricelist_filter_by_user" model="ir.rule">
+    <field name="name">Ver solo tarifas del usuario</field>
+    <field name="model_id" ref="model_product_pricelist_report"/>
+    <field name="domain_force">[('pricelist_id', 'in', user.pricelist_ids.ids)]</field>
+    <field name="perm_read" eval="True"/>
+    <field name="perm_write" eval="False"/>
+    <field name="perm_create" eval="False"/>
+    <field name="perm_unlink" eval="False"/>
+    <field name="groups" eval="[(4, ref('base.group_user'))]"/>
+</record>
+
+</odoo>
