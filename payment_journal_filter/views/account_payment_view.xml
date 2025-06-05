@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="view_account_payment_form_journal_filter" model="ir.ui.view">
+            <field name="name">account.payment.form.journal.filter</field>
+            <field name="model">account.payment</field>
+            <field name="inherit_id" ref="account_payment_group.view_account_payment_form2"/>
+            <field name="arch" type="xml">
+
+                <!-- Filtro: solo diarios activos -->
+                <field name="journal_id" position="attributes">
+                    <attribute name="domain">[('active', '=', True)]</attribute>
+                </field>
+
+                <field name="destination_journal_id" position="attributes">
+                    <attribute name="domain">[('active', '=', True)]</attribute>
+                </field>
+            </field>
+        </record>
+
+    </data>
+</odoo>
