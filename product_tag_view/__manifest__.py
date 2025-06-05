@@ -1,7 +1,7 @@
 {
     "name": "Menú de Etiquetas de Productos",
     "version": "16.0.1.0.0",
-    "depends": ["stock", "product"],
+    "depends": ["om_account_daily_reports", "accounting_pdf_reports"],
     "author": "Gauchocode",
     "category": "Inventory",
     "summary": "Agrega un acceso directo a las etiquetas de productos desde Configuración de Inventario.",
