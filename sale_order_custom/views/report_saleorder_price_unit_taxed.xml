@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <data>
+
+    <template id="report_saleorder_price_unit_taxed" inherit_id="sale.report_saleorder_document">
+
+      <!-- Reemplazamos todo el contenido de la celda de precio unitario -->
+      <xpath expr="//td[@name='td_priceunit']" position="replace">
+        <td name="td_priceunit" class="text-end">
+          <t t-set="qty" t-value="line.product_uom_qty or 1"/>
+          <span t-esc="line.price_total / qty"
+                t-options="{'widget': 'monetary', 'display_currency': doc.currency_id}"/>
+        </td>
+      </xpath>
+
+    </template>
+
+  </data>
+</odoo>

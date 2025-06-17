@@ -1,7 +1,7 @@
 {
     "name": "Filtro de diarios archivados en pagos",
     "version": "16.0.1.0.1",
-    "depends": ["account"],
+    "depends": ["account","l10n_ar_ux"],
     "author": "Gauchocode",
     "description": "Evita que se seleccionen diarios archivados en pagos",
     "category": "Accounting",
