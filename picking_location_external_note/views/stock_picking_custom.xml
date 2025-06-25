@@ -1,0 +1,72 @@
+<odoo>
+    <record id="report_delivery_document_custom_ar_header" model="ir.ui.view">
+    <field name="name">report_delivery_document_custom_ar_header</field>
+    <field name="inherit_id" ref="l10n_ar_stock.report_delivery_document"/>
+    <field name="priority" eval="30"/>
+    <field name="arch" type="xml">
+        <!-- Redefinir el header -->
+        <xpath expr="//t[@t-set='custom_header']" position="replace">
+        <t t-set="custom_header" t-value="'picking_location_external_note.custom_ramos_header'"/>
+        </xpath>
+ <xpath expr="//div[@id='informations']//span[@t-field='o.cot']/../.." position="before">
+
+    <br/>
+    <t t-if="o.sale_id.user_id">
+      <strong>Vendedor:</strong>
+      <span t-esc="o.sale_id.user_id.name"/>
+    </t>
+
+    <br/><br/>
+    <strong>Notas: IMPORTANTE</strong><br/>
+    <span>
+      Ramos Revestimientos transporta los materiales, sin embargo para la descarga de los mismos el cliente deberá contar con personal en obra.
+    </span>
+</xpath>
+
+<xpath expr="//div[@id='informations']//span[@t-field='o.origin']/.." position="replace"/>
+
+<xpath expr="//div[@id='l10n_ar_stock_div_hide']" position="before">
+  <div class="row mb-2 mt-2" style="border:1px solid #ccc;padding: 5px;text-align: center;">
+    <div class="col-4">
+      <strong>Orden de Venta:</strong>
+      <span t-esc="o.origin"/>
+    </div>
+    <div class="col-4">
+      <strong>Estado:</strong>
+<t t-set="state_label">
+    <t t-if="o.state == 'draft'">Borrador</t>
+    <t t-elif="o.state == 'waiting'">En espera de otra operación</t>
+    <t t-elif="o.state == 'confirmed'">En espera</t>
+    <t t-elif="o.state == 'assigned'">Listo</t>
+    <t t-elif="o.state == 'done'">Hecho</t>
+    <t t-elif="o.state == 'cancel'">Cancelado</t>
+</t>
+<span><t t-out="state_label"/></span>
+    </div>
+    <div class="col-4">
+      <strong>Fecha Prometida:</strong>
+      <span t-esc="o.scheduled_date.strftime('%d/%m/%Y') if o.scheduled_date else ''"/>
+    </div>
+  </div>
+</xpath>
+
+<t t-set="custom_footer">
+    <div class="row" style="font-size: 13px; margin-top: 10px;font-weight: bold;">
+      <div class="col-12 text-center">
+        <span>Tel: </span>
+        <span t-esc="o.company_id.mobile"/>
+        <span>•</span>
+      <span>Email: </span>
+        <span t-esc="o.company_id.email"/>
+        <span>•</span>
+        <span>Website: </span>
+        <span t-esc="o.company_id.website"/>
+      </div>
+    </div>
+</t>
+
+
+
+    </field>
+    </record>
+</odoo>

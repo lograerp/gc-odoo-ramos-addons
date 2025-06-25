@@ -1,0 +1,53 @@
+<odoo>
+  <template id="custom_ramos_header" name="Custom Ramos Header" t-name="gc_odoo_ramos_addons.custom_ramos_header">
+<t name="Custom Ramos Header" t-name="picking_location_external_note.custom_ramos_header">
+  <!-- Header container con fondo gris -->
+<div style="width: 100%;position: relative; padding: 0; margin-bottom: 10px;">
+    <!-- X centrada absoluta -->
+    <div style="position: absolute;left: 0;width: 100%;text-align: center;font-size: 100px;font-weight: bold;color: #000;z-index: 10;line-height: 1;">
+              <span style="background-color: #f0f0f0;padding: 10px 30px;font-size: 100px;font-weight: bold;color: #000;display: inline-block;line-height: 1;">
+              X
+          </span>
+
+    </div>
+    <div class="row mb-3" style="min-height: 120px;">
+
+      <!-- Columna izquierda -->
+      <div class="col-6" style="padding: 10px;border: 1px solid #ccc;">
+        <div>
+          <img t-att-src="'/web/image/res.company/%s/logo' % company.id" style="max-height: 70px;"/>
+        </div>
+        <div style="margin-top: 10px; font-size: 11px;">
+          <div>Av de Mayo 1298 - Tel: 4654-8000 / 5889</div>
+          <div>Av Gaona 1702 - Tel: 4469-0419</div>
+          <div>Av Pedro Palacios 691 - Tel: 11 6401-8427</div>
+          <div>Av Juan B Alberdi 4030 - Tel: 6073-5540</div>
+          <div>Av Juan B Alberdi 3421 - Tel: 11 3159-3247</div>
+        </div>
+        <div t-if="company.email" class="mt-1" style="font-size: 11px;">
+          <strong>Email:</strong> <span t-esc="company.email"/>
+        </div>
+      </div>
+
+      <!-- Columna derecha centrada -->
+      <div class="col-6 d-flex align-items-center justify-content-center" style="padding: 10px; border: 1px solid #ccc;">
+        <div class="text-center" style="width: 100%;">
+          <div style="font-weight: bold; font-size: 14px; margin-bottom: 5px;">
+            Documento no válido como factura
+          </div>
+          <div t-if="o.picking_type_id.warehouse_id.name" style="margin-bottom: 5px;font-weight: bold; font-size: 20px;">
+            <strong><span t-esc="o.picking_type_id.warehouse_id.name"/>: Ordenes de entrega</strong>
+          </div>
+          <div style="margin-bottom: 5px;font-weight: bold; font-size: 30px;">
+               <span t-esc="o.name"/>
+          </div>
+          <div style="margin-bottom: 5px;font-weight: bold; font-size: 20px;">
+            <strong>Fecha:</strong> <span t-esc="o.date_done.strftime('%d/%m/%Y') if o.date_done else ''"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </t>
+  </template>
+</odoo>

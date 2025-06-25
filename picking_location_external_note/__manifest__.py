@@ -7,7 +7,11 @@
     'category': 'Warehouse',
     'depends': ['base', 'stock'],
     'data': [
-        'views/stock_picking_report_views.xml'
+        'views/stock_picking_report_views.xml',
+        'views/report_custom_ramos_header.xml',
+        'views/stock_picking_custom.xml',
+        'views/hide_stock_report.xml',
+
     ],
     'installable': True,
     'application': False,

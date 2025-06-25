@@ -1,0 +1,5 @@
+<odoo>
+    <data noupdate="1">
+        <delete model="ir.actions.report" id="stock.action_report_picking"/>
+    </data>
+</odoo>
