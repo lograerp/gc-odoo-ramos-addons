@@ -22,13 +22,4 @@ class SaleOrder(models.Model):
         #         'Selected pricelist priority can not be higher than pricelist '
         #         'configured on partner'
         #     ))
-
-        if (
-                self.partner_id.property_payment_term_id and
-                self.payment_term_id and
-                self.partner_id.property_payment_term_id.sequence <
-                self.payment_term_id.sequence):
-            raise UserError(_(
-                'Selected payment term priority can not be higher than '
-                'payment term configured on partner'
-            ))
+        pass
