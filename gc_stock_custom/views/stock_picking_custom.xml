@@ -6,7 +6,7 @@
     <field name="arch" type="xml">
         <!-- Redefinir el header -->
         <xpath expr="//t[@t-set='custom_header']" position="replace">
-        <t t-set="custom_header" t-value="'picking_location_external_note.custom_ramos_header'"/>
+        <t t-set="custom_header" t-value="'gc_stock_custom.custom_ramos_header'"/>
         </xpath>
  <xpath expr="//div[@id='informations']//span[@t-field='o.cot']/../.." position="before">
 

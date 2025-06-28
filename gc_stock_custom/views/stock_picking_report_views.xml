@@ -8,6 +8,7 @@
                 <xpath expr="//div[@t-if='o.signature' and @name='signature']" position="before">
                     <div style="text-align: center">
                         <span t-field="o.location_id.comment" style="text-center;"/>
+                        <span t-field="o.sale_note" style="text-center;"/>
                     </div>
                 </xpath>
             </field>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_order_form_inherit_picking_note" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.picking.note</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='note_group']" position="after">
+                <group name="picking_note_group" col="6">
+                    <field name="picking_note" placeholder="Internal note for the picking..." colspan="6"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

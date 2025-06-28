@@ -14,7 +14,8 @@ class SaleOrder(models.Model):
                 if user.property_warehouse_id:
                     order.warehouse_id = user.property_warehouse_id
                 elif user.store_ids:
-                    order.warehouse_id = user.store_ids[0].warehouse_ids[0]
+                    warehouses = user.store_ids.mapped('warehouse_ids')
+                    order.warehouse_id = warehouses[0] if warehouses else False
                 else:
                     default_warehouse_id = IrDefault.with_company(order.company_id.id)\
                                                     .get_model_defaults('sale.order').get('warehouse_id')

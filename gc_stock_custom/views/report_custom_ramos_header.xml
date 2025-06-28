@@ -1,6 +1,6 @@
 <odoo>
   <template id="custom_ramos_header" name="Custom Ramos Header" t-name="gc_odoo_ramos_addons.custom_ramos_header">
-<t name="Custom Ramos Header" t-name="picking_location_external_note.custom_ramos_header">
+<t name="Custom Ramos Header" t-name="gc_stock_custom.custom_ramos_header">
   <!-- Header container con fondo gris -->
 <div style="width: 100%;position: relative; padding: 0; margin-bottom: 10px;">
     <!-- X centrada absoluta -->
@@ -10,7 +10,7 @@
           </span>
 
     </div>
-    <div class="row mb-3" style="min-height: 120px;">
+    <div class="row mb-3" style="min-height: 100px;">
 
       <!-- Columna izquierda -->
       <div class="col-6" style="padding: 10px;border: 1px solid #ccc;">
@@ -23,9 +23,6 @@
           <div>Av Pedro Palacios 691 - Tel: 11 6401-8427</div>
           <div>Av Juan B Alberdi 4030 - Tel: 6073-5540</div>
           <div>Av Juan B Alberdi 3421 - Tel: 11 3159-3247</div>
-        </div>
-        <div t-if="company.email" class="mt-1" style="font-size: 11px;">
-          <strong>Email:</strong> <span t-esc="company.email"/>
         </div>
       </div>
 

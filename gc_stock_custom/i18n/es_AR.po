@@ -1,0 +1,269 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* gc_stock_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20250528\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-28 18:32+0000\n"
+"PO-Revision-Date: 2025-06-28 18:32+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: gc_stock_custom
+#: model:ir.actions.report,print_report_name:gc_stock_custom.report_custom_remito
+msgid "'Remito - %s' % object.name"
+msgstr "'Remito - %s' % object.name"
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.custom_ramos_header
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid ": Ordenes de entrega"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid ""
+"<br/><br/>\n"
+"    <strong>Notas: IMPORTANTE</strong><br/>\n"
+"    <span>\n"
+"      Ramos Revestimientos transporta los materiales, sin embargo para la descarga de los mismos el cliente deberá contar con personal en obra.\n"
+"    </span>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+msgid "<span style=\"background-color: #f0f0f0; padding: 10px 30px;\">X</span>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.custom_ramos_header
+msgid ""
+"<span style=\"background-color: #f0f0f0;padding: 10px 30px;font-size: 100px;font-weight: bold;color: #000;display: inline-block;line-height: 1;\">\n"
+"              X\n"
+"          </span>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+msgid "<span> • Email: </span>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+msgid "<span> • Website: </span>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "<span>Tel: </span>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid ""
+"<span>•</span>\n"
+"        <span>Website: </span>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid ""
+"<span>•</span>\n"
+"      <span>Email: </span>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "<strong>Email:</strong>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "<strong>Estado:</strong>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "<strong>Fecha Prometida:</strong>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.custom_ramos_header
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+msgid "<strong>Fecha:</strong>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "<strong>Orden de Venta:</strong>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "<strong>Vendedor:</strong>"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.custom_ramos_header
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Av Gaona 1702 - Tel: 4469-0419"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.custom_ramos_header
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Av Juan B Alberdi 3421 - Tel: 11 3159-3247"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.custom_ramos_header
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Av Juan B Alberdi 4030 - Tel: 6073-5540"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.custom_ramos_header
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Av Pedro Palacios 691 - Tel: 11 6401-8427"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.custom_ramos_header
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Av de Mayo 1298 - Tel: 4654-8000 / 5889"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "Borrador"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "Cancelado"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Cantidad"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.custom_ramos_header
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.external_layout_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Documento no válido como factura"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "En espera"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "En espera de otra operación"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Fecha:"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "Hecho"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.view_order_form_inherit_picking_note
+msgid "Internal note for the picking..."
+msgstr "Nota interna pra el remito ..."
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_delivery_document_custom_ar_header
+msgid "Listo"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model:ir.model.fields,field_description:gc_stock_custom.field_sale_order__picking_note
+msgid "Picking Note"
+msgstr "Nota para Remito"
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Producto"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Productos"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model:ir.actions.report,name:gc_stock_custom.report_custom_remito
+msgid "Remito personalizado"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model:ir.model.fields,field_description:gc_stock_custom.field_stock_picking__sale_note
+msgid "Sale Order Note"
+msgstr "Nota de la Orden de Venta"
+
+#. module: gc_stock_custom
+#: model:ir.model,name:gc_stock_custom.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "Tel:"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model:ir.model.fields,help:gc_stock_custom.field_stock_picking__sale_note
+msgid "This note comes from the related sale order."
+msgstr "Esta nota viene de la Orden de Venta"
+
+#. module: gc_stock_custom
+#: model:ir.model.fields,help:gc_stock_custom.field_sale_order__picking_note
+msgid "This note will be visible on the delivery order."
+msgstr "Esta nota sera visible en el Remito"
+
+#. module: gc_stock_custom
+#: model:ir.model,name:gc_stock_custom.model_stock_picking
+msgid "Transfer"
+msgstr "Traslado"
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid "UOM"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid ""
+"• \n"
+"          Email:"
+msgstr ""
+
+#. module: gc_stock_custom
+#: model_terms:ir.ui.view,arch_db:gc_stock_custom.report_custom_delivery_document
+msgid ""
+"• \n"
+"          Website:"
+msgstr ""
