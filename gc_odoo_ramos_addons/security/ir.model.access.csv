@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_daybook_report_salesman,access.daybook.report.salesman,om_account_daily_reports.model_account_daybook_report,sales_team.group_sale_salesman,1,1,1,1
+access_cashbook_report_salesman,access.cashbook.report.salesman,om_account_daily_reports.model_account_cashbook_report,sales_team.group_sale_salesman,1,1,1,1
+access_bankbook_report_salesman,access.bankbook.report.salesman,om_account_daily_reports.model_account_bankbook_report,sales_team.group_sale_salesman,1,1,1,1
+access_ir_model_fields_user,access.ir.model.fields.user,base.model_ir_model_fields,base.group_user,1,0,0,0
