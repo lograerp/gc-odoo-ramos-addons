@@ -12,6 +12,7 @@
         'views/stock_picking_custom.xml',
         'views/hide_stock_report.xml',
         'views/sale_order_views.xml',
+        'views/stock_picking_type_custom.xml',
 
     ],
     'installable': True,

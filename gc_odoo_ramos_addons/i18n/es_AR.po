@@ -2,6 +2,7 @@
 # This file contains the translation of the following modules:
 # 	* om_account_daily_reports
 #   * accounting_pdf_reports
+#   *gc_odoo_ramos_addons
 #
 msgid ""
 msgstr ""
@@ -1731,3 +1732,29 @@ msgstr ""
 "registro. Si deja el formato automático, se calculará en función de la "
 "jerarquía de informes financieros (\"nivel\" de campo calculado "
 "automáticamente)."
+
+
+#. module: gc_odoo_ramos_addons
+#: model:ir.ui.menu,name:gc_odoo_ramos_addons.custom_menu_bankbook_in_sales
+msgid "Libro Banco"
+msgstr ""
+
+#. module: gc_odoo_ramos_addons
+#: model:ir.ui.menu,name:gc_odoo_ramos_addons.custom_menu_cashbook_in_sales
+msgid "Libro de Caja"
+msgstr ""
+
+#. module: gc_odoo_ramos_addons
+#: model:ir.ui.menu,name:gc_odoo_ramos_addons.custom_menu_daybook_in_sales
+msgid "Libro del Día"
+msgstr ""
+
+#. module: gc_odoo_ramos_addons
+#: model:ir.ui.menu,name:gc_odoo_ramos_addons.custom_sales_reports_menu
+msgid "Reportes"
+msgstr ""
+
+#. module: gc_odoo_ramos_addons
+#: model_terms:ir.ui.view,arch_db:gc_odoo_ramos_addons.view_product_tree_inherit_show_avg_cost_only_manager
+msgid "Unit Cost"
+msgstr "Coste"

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_partner_property_form_inherit_no_open_pricelist" model="ir.ui.view">
+            <field name="name">view.partner.property.form.inherit.no.open.pricelist</field>
+            <field name="model">res.partner</field>
+            <field name="inherit_id" ref="product.view_partner_property_form"/>
+            <field name="arch" type="xml">
+                <field name="property_product_pricelist" position="attributes">
+                    <attribute name="options">{'no_open': True}</attribute>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
