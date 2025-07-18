@@ -12,7 +12,16 @@
                            optional="show" 
                            widget="monetary" 
                            options="{'currency_field': 'company_currency_id'}"
-                           groups="stock.group_stock_manager"/>
+                           groups="base.group_system"/>
+                </field>
+                <field name="total_value" position="replace">
+                <field name="total_value" 
+                string="Total Value" 
+                optional="show" 
+                widget="monetary" 
+                options="{'currency_field': 'company_currency_id'}" 
+                sum="Total Value"
+                groups="base.group_system"/>
                 </field>
             </field>
         </record>
